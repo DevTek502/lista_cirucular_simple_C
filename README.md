@@ -4,7 +4,7 @@
 
 ![Lista](src/lista.PNG)
 
-En esta ocacion hemos realizar para nuestro repositorio de Github un ejemplo de como realizar la estructura de una lista Circular Simple esto hecho en el leguaje de C++ y en la cual hemos agregado las siguiente funciones
+En esta ocacion hemos realizado para nuestro repositorio de Github un ejemplo de como realizar la estructura de una lista Circular Simple esto hecho en el leguaje de C++ y en la cual hemos agregado las siguiente funciones
 
 
 ### Funciones
