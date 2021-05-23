@@ -1,8 +1,10 @@
 # Estructura de Datos
 
-## Lista Enlazada Simple
+## Lista Circular Simple
 
-En esta ocacion en este repositorio de Github podras encontrar una ejemplo de como realizar una lista enlazada simple esto hecho en el leguaje de C++ y en la cual hemos agregado las siguiente funciones
+![Lista](src/lista.PNG)
+
+En esta ocacion hemos realizar para nuestro repositorio de Github un ejemplo de como realizar la estructura de una lista Circular Simple esto hecho en el leguaje de C++ y en la cual hemos agregado las siguiente funciones
 
 
 ### Funciones
@@ -12,16 +14,16 @@ En esta ocacion en este repositorio de Github podras encontrar una ejemplo de co
 * Elminar un nodo al inicio
 * Eliminar un nodo al final
 * Obtener el estado actual de la estructura
-* Imprimir todos los nodos de la lista
+* Un metodo que nos permitar visualizar y recorrer nodo a nodo de esta estructura 
 
 ---
 ### Video Tutorial 
 
 Aca podras encontrar los videos tutoriales de la explicacion del codigo que hemos realizado, la cual la hemos divido en dos partes y subido a nuestro canal de Youtube
 
-[Parte 1](https://www.youtube.com/watch?v=HEf7SWtAOaE&t=1182s)
+[Parte 1](https://www.youtube.com/watch?v=PZE1op0tV4g&t=24s)
 
-[Parte 2](https://www.youtube.com/watch?v=xJinJyRHaM8&t=96s)
+[Parte 2]()
 
 ---
 ### Serie de Estructura de Datos
@@ -37,3 +39,4 @@ Te dejamos un link para mires nuestra serie que hemos realizado sobre las difere
 [Canal de Youtube](https://www.youtube.com/channel/UClawZxxlqfXzPetVvUnMb4g) :coffee:
 
 ![DevTek](src/DevTek.png)
+
