@@ -23,7 +23,7 @@ Aca podras encontrar los videos tutoriales de la explicacion del codigo que hemo
 
 [Parte 1](https://www.youtube.com/watch?v=PZE1op0tV4g&t=24s)
 
-[Parte 2]()
+[Parte 2](https://youtu.be/Ob9AfVuaAQ4)
 
 ---
 ### Serie de Estructura de Datos
