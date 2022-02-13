@@ -5,19 +5,14 @@
 class Nodo
 {
 	private:
-		//variable informacion
 		int dato;
-		//apuntadores
-		Nodo *siguiente;
-		Nodo *anterior;
+		Nodo *siguiente;	
 	public:
 		Nodo(int);
-		int getDato();
 		void setDato(int);
-		Nodo * getSiguiente();
+		int getDato();
 		void setSiguiente(Nodo *);
-		Nodo * getAnterior();
-		void setAnterior(Nodo *);
+		Nodo *getSiguiente();
 		~Nodo();
 	protected:
 };

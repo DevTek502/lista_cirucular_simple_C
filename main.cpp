@@ -1,13 +1,14 @@
 #include <iostream>
 #include <conio.h>
-#include "Lista.h"
+#include "LIsta.h"
+#include "Nodo.h"
 using namespace std;
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char** argv) {
-	Lista listaDoble;
 	int numero;
+	LIsta listaCircular;
 	int opMenu;	 	
 	 do{
         system("cls");//para borrar en pantalla cuando repita el menu
@@ -26,29 +27,50 @@ int main(int argc, char** argv) {
             case 1:
             	cout<<"Ingrese un numero: ";
             	cin>>numero;
-            	listaDoble.insertarInicio(numero);
+            	listaCircular.insertarInicio(numero);
                 break;
 
             case 2:
             	cout<<"Ingrese un numero: ";
             	cin>>numero;
-            	listaDoble.insertarFinal(numero);
+            	listaCircular.insertarFinal(numero);
             	break;
             	
             case 3:
-            	listaDoble.eliminarInicio();
+            	listaCircular.eliminarInicio();
             	break;
             	
             case 4:
-            	listaDoble.eliminarFinal();
+            	listaCircular.eliminarFinal();
             	break;
             	
-            case 5: 
-            	listaDoble.imprimirLista();
-				getch();        	
-                break; 
+            case 5:
+				Nodo *auxPrimero = listaCircular.getInicio();
+				int opMenu2;
+				if(auxPrimero!=NULL){
+					do{
+						system("cls");
+						cout<<"--Lista Circular--"<<endl;
+				        cout<<"1. Siguiente "<<endl;
+				        cout<<"2. Salir "<<endl<<endl;
+				        cout<<"Nodo: "<<auxPrimero->getDato()<<"--->"<<endl;
+				        cout<<"Opcion: ";
+						cin>>opMenu2;
+				        switch(opMenu2)
+						{
+							case 1:
+								auxPrimero = auxPrimero->getSiguiente();
+								break;
+						}
+					}while(opMenu2 != 2);	
+	                break;	
+				}else{
+					cout<<"No hay elementos"<<endl;
+					getch();
+				}				 
         }
 
     }while(opMenu != 6);
 	return 0;
 }
+

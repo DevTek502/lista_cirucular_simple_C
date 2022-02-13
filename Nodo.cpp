@@ -2,20 +2,24 @@
 
 Nodo::Nodo(int dato)
 {
-	this->dato = dato;
-	this->siguiente = NULL;
-	this->anterior = NULL;
+	this->dato=dato;
+	this->siguiente=NULL;
 }
 
-//get y set 
+//metodos get y set 
+void Nodo::setDato(int dato)
+{
+	this->dato=dato;
+}
+
 int Nodo::getDato()
 {
 	return dato;
-} 
+}
 
-void Nodo::setDato(int dato)
+void Nodo::setSiguiente(Nodo *apuntador)
 {
-	this->dato = dato;
+	this->siguiente=apuntador;
 }
 
 Nodo * Nodo::getSiguiente()
@@ -23,21 +27,7 @@ Nodo * Nodo::getSiguiente()
 	return siguiente;
 }
 
-void Nodo::setSiguiente(Nodo *info)
-{
-	this->siguiente = info;
-}
-
-Nodo * Nodo::getAnterior()
-{
-	return anterior;
-}
-
-void Nodo::setAnterior(Nodo *info)
-{
-	this->anterior = info;
-}
-
 Nodo::~Nodo()
 {
 }
+
