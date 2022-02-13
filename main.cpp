@@ -45,32 +45,32 @@ int main(int argc, char** argv) {
             	break;
             	
             case 5:
-				Nodo *auxPrimero = listaCircular.getInicio();
-				int opMenu2;
-				if(auxPrimero!=NULL){
-					do{
-						system("cls");
-						cout<<"--Lista Circular--"<<endl;
-				        cout<<"1. Siguiente "<<endl;
-				        cout<<"2. Salir "<<endl<<endl;
-				        cout<<"Nodo: "<<auxPrimero->getDato()<<"--->"<<endl;
-				        cout<<"Opcion: ";
-						cin>>opMenu2;
-				        switch(opMenu2)
-						{
-							case 1:
-								auxPrimero = auxPrimero->getSiguiente();
-								break;
-						}
-					}while(opMenu2 != 2);	
-	                break;	
-				}else{
-					cout<<"No hay elementos"<<endl;
-					getch();
-				}				 
+		Nodo *auxPrimero = listaCircular.getInicio();
+		int opMenu2;
+		if(auxPrimero!=NULL){
+		     do{
+			system("cls");
+			cout<<"--Lista Circular--"<<endl;
+			cout<<"1. Siguiente "<<endl;
+			cout<<"2. Salir "<<endl<<endl;
+			cout<<"Nodo: "<<auxPrimero->getDato()<<"--->"<<endl;
+			cout<<"Opcion: ";
+			cin>>opMenu2;
+			switch(opMenu2)
+			{
+				case 1:
+				auxPrimero = auxPrimero->getSiguiente();
+				break;
+			}
+		     }while(opMenu2 != 2);	
+	             break;	
+		}else{
+		   cout<<"No hay elementos"<<endl;
+		   getch();
+		}				 
         }
 
     }while(opMenu != 6);
-	return 0;
+    return 0;
 }
 
